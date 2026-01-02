@@ -125,7 +125,7 @@ export const Contact = () => {
                 </label>
                 <input
                   required
-                  placeholder="your-email@domain.com"
+                  placeholder="your_email@domain.com"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
