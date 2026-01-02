@@ -91,10 +91,10 @@ export const Contact = () => {
             <span className="text-primary font-serif italic font-normal">Touch!</span>
           </h2>
         </div>
-      
-       <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto px-4 place-items-center lg:place-items-stretch">
-        <div className="glass rounded-3xl p-8 w-11/12 sm:w-10/12 md:w-8/12 lg:w-full">
-          <form className="space-y-6" onSubmit={handleSubmit}>
+
+        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
