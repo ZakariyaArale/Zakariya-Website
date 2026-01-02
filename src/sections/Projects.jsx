@@ -1,12 +1,12 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-{/*SmartAir, Async_Battleship, Cardio Predictor, Budget Manager*/}
+
 const projects = [
   {
     title: "SmartAir",
     description:
       "Collaborated with a team of five to build an app that securely helps parents manage their child’s healthcare data while enabling children to interactively learn and track their lung performance",
-    image: "/projects/project1.png",
+    image: `${import.meta.env.BASE_URL}projects/project1.png`,
     tags: ["Android", "Java", "XML", "Scrum", "Firebase", "OOP"],
     link: "https://github.com/ZakariyaArale/SmartAir",
   },
@@ -14,7 +14,7 @@ const projects = [
     title: "Async_Battleship",
     description:
       "Built a high-performance asynchronous server that manages client connections and synchronizes gameplay to simulate the classic Battleship experience",
-    image: "/projects/project2.png",
+    image: `${import.meta.env.BASE_URL}projects/project2.png`,
     tags: ["C", "Linux", "Makefile"],
     link: "https://github.com/ZakariyaArale/Async_Battleship",
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "Cardio_Predictor",
     description:
       "Engineered a Random Forest machine learning model with scikit-learn to accurately predict cardiovascular disease risk from patient health data",
-    image: "/projects/project3.png",
+    image: `${import.meta.env.BASE_URL}projects/project3.png`,
     tags: ["Python", "Pandas", "Scikit-Learn", "Matplotlib"],
     link: "https://github.com/ZakariyaArale/Cardio_Predictor",
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "AccountSim",
     description:
       "Developed an interactive Java program that simulates secure bank account transactions, including account creation, deposits, withdrawals, interest calculation, and login authentication",
-    image: "/projects/project4.png",
+    image: `${import.meta.env.BASE_URL}projects/project4.png`,
     tags: ["Java", "OOP"],
     link: "https://github.com/ZakariyaArale/AccountSim",
   },
@@ -39,9 +39,7 @@ const projects = [
 export const Projects = () => {
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
-      {/* Bg glows */}
       <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header */}
         <div className="text-center mx-auto max-w-3xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">
             My
@@ -55,7 +53,6 @@ export const Projects = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <div
@@ -63,7 +60,6 @@ export const Projects = () => {
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
-              {/* Image */}
               <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}
@@ -75,8 +71,11 @@ export const Projects = () => {
                 bg-gradient-to-t from-card via-card/50
                  to-transparent opacity-60"
                 />
-                {/* Overlay Links */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  className="absolute inset-0 flex items-center justify-center gap-4
+                    opacity-100 md:opacity-0 md:group-hover:opacity-100
+                    transition-opacity duration-300"
+                >
                   <a
                     href={project.link}
                     target="_blank"
@@ -84,21 +83,14 @@ export const Projects = () => {
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
-                </div>
+              </div>
               </div>
 
-              {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight
-                    className="w-5 h-5 
-                  text-muted-foreground group-hover:text-primary
-                   group-hover:translate-x-1 
-                   group-hover:-translate-y-1 transition-all"
-                  />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
@@ -118,8 +110,7 @@ export const Projects = () => {
           ))}
         </div>
 
-        {/* View All CTA */}
-          <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <a
             href="https://github.com/ZakariyaArale"
             target="_blank"

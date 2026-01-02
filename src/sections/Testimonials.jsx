@@ -7,8 +7,7 @@ const testimonials = [
       "Zak is probably the smartest and most hardworking person I know.  Super passionate and knowledgeable about anything CS. It was an honour to work with him while taking Theory of Computation.",
     author: "Kevin Yu",
     role: "CS + Math Student @ UTSC",
-    avatar:
-      "/projects/kevinpfp.png",
+    avatar: `${import.meta.env.BASE_URL}projects/kevinpfp.png`,
   },
 ];
 
@@ -26,34 +25,18 @@ export const Testimonials = () => {
   };
   return (
     <section id="testimonials" className="py-32 relative overflow-hidden">
-      <div
-        className="container mx-auto 
-      px-6 relative z-10"
-      >
-        {/* Section Header */}
-        <div
-          className="text-center max-w-3xl 
-        mx-auto mb-16"
-        >
-         
-          <h2
-            className="text-4xl md:text-5xl 
-          font-bold mt-4 mb-6 animate-fade-in 
-          animation-delay-100"
-          >
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100">
             Testimonals From{" "}
-            <span
-              className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground glow-text"
-            >
+            <span className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground glow-text">
               Awsome People!
             </span>
           </h2>
         </div>
 
-        {/* Testimonial Carousel */}
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            {/* Main Testimonial */}
             <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
               <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
                 <Quote className="w-6 h-6 text-primary-foreground" />
@@ -80,7 +63,6 @@ export const Testimonials = () => {
               </div>
             </div>
 
-            {/* Testimonials Navigation */}
             <div className="flex items-center justify-center gap-4 mt-8">
               <button
                 className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
