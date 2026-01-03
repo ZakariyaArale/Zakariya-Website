@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Zakariya Website
 
 This is my personal profile template, built to highlight my portfolio, technical skills, and professional experience using modern frameworks such as React, Tailwind CSS, and Vite.  
 
