@@ -5,7 +5,7 @@ const projects = [
   {
     title: "SmartAir",
     description:
-      "Collaborated with a team of five to build an app that securely helps parents manage their child’s healthcare data while enabling children to interactively learn and track their lung performance",
+      "Collaborated with a team of five to build an app that securely helps parents manage their asthmatic child’s healthcare data while enabling children to interactively learn and track their lung performance",
     image: `${import.meta.env.BASE_URL}projects/project1.png`,
     tags: ["Android", "Java", "XML", "Scrum", "Firebase", "OOP"],
     link: "https://github.com/ZakariyaArale/SmartAir",
