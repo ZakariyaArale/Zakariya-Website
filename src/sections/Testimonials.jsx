@@ -5,13 +5,13 @@ const testimonials = [
   { quote: "Zak is probably the smartest and most hardworking person I know.  Super passionate and knowledgeable about anything CS. It was an honour to work with him while taking Theory of Computation.",
     author: "Kevin Yu",
     role: "CS (SWE Co-op) + Math Student @ UTSC",
-    avatar: `${import.meta.env.BASE_URL}projects/kevinpfp.png`,
+    avatar: `${import.meta.env.BASE_URL}avatar/kevinpfp.png`,
   },
 
   { quote: "Zak is genuinely one of the most outstanding people I know, possessing exceptional intelligence and a constant willingness to help others. He was incredibly helpful during the CS and math courses we took together, and he would always take the time to help clarify concepts I didn't initially understand. It truly was a privilege to work with him.",
     author: "Michael Lee",
     role: "CS (Entrepreneurship Co-op) + Stats Student @ UTSC",
-    avatar: `${import.meta.env.BASE_URL}projects/michaelpfp.jpg`,
+    avatar: `${import.meta.env.BASE_URL}avatar/michaelpfp.jpg`,
   },
 ];
 

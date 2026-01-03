@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { Button } from "@/button/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -50,7 +50,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Desktop CTA Button */}
+        {/* Desktop Contact Button */}
         <a href="#contact">
         <Button
           size="sm"

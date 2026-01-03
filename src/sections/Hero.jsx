@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { Button } from "@/button/Button";
 import {
   ArrowRight,
   ChevronDown,
@@ -7,7 +7,7 @@ import {
   Instagram,
   Download,
 } from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { AnimatedBorderButton } from "../button/AnimatedBorderButton";
 
 export const Hero = () => {
   return (
