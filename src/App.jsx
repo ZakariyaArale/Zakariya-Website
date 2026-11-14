@@ -2,6 +2,7 @@ import { Navbar } from "@/layout/Navbar";
 import { Hero } from "@/sections/Hero";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
+import { Artifact } from "@/sections/Artifact";
 import { Testimonials } from "@/sections/Testimonials";
 import { Contact } from "@/sections/Contact";
 import { Footer } from "./layout/Footer";
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Projects />
         <Skills />
+        <Artifact />
         <Testimonials />
         <section id="contact">
           <Contact />

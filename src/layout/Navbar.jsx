@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
+  { href: "#artifact", label: "Artifact" },
   { href: "#testimonials", label: "Testimonials" },
 ];
 
@@ -22,9 +23,8 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
-        isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
-      } z-50`}
+      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
+        } z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -52,12 +52,12 @@ export const Navbar = () => {
 
         {/* Desktop Contact Button */}
         <a href="#contact">
-        <Button
-          size="sm"
-          className="bg-[#9B30FF] text-white hover:bg-[#b04bff] shadow-[0_0_8px_#9B30FF,0_0_16px_#9B30FF]"
-        >
-          Contact Me
-        </Button>
+          <Button
+            size="sm"
+            className="bg-[#9B30FF] text-white hover:bg-[#b04bff] shadow-[0_0_8px_#9B30FF,0_0_16px_#9B30FF]"
+          >
+            Contact Me
+          </Button>
         </a>
 
         {/* Mobile Menu Button */}
@@ -85,12 +85,12 @@ export const Navbar = () => {
             ))}
 
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-            <Button
-              size="sm"
-              className="bg-[#9B30FF] text-white hover:bg-[#b04bff] shadow-[0_0_8px_#9B30FF,0_0_16px_#9B30FF]"
-            >
-              Contact Me
-            </Button>
+              <Button
+                size="sm"
+                className="bg-[#9B30FF] text-white hover:bg-[#b04bff] shadow-[0_0_8px_#9B30FF,0_0_16px_#9B30FF]"
+              >
+                Contact Me
+              </Button>
             </a>
           </div>
         </div>

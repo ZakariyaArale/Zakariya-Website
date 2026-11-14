@@ -44,11 +44,36 @@ export const Hero = () => {
               Hello I'm Zakariya{" "}
               <span className="text-primary glow-text">Arale</span>
             </h1>
-            <p className="text-lg text-muted-foreground animate-fade-in animation-delay-200">
-              I’m a second-year Computer Science (Software Engineering) student at the University of Toronto Scarborough, passionate about building impactful and reliable software. I’ve contributed to both independent and team projects, including SmartAir, an app helping parents manage their child’s health data, and an asynchronous Battleship gaming server. <br /><br />
-              Beyond coding, I’ve been active in extracurriculars and community initiatives in my schools and across Toronto. Additionally, I enjoy helping others with course material and recently became a TA at UofT. Looking ahead, I aim to use my skills to provide youth in low-income communities with tech opportunities. <br /><br />
-              Currently taking a short break from personal projects, stay tuned for more in 2026!
-            </p>
+            <div className="mx-auto max-w-2xl space-y-4 text-lg leading-relaxed text-muted-foreground animate-fade-in animation-delay-200">
+              <p>
+                I’m a third year Computer Science (Software Engineering) student at the
+                University of Toronto Scarborough and an Android Engineering Intern at
+                Wattpad, passionate about building impactful, reliable, and accessible
+                software.
+              </p>
+              <p>
+                At Wattpad, I’m improving how the app works with assistive technology like
+                TalkBack. See one of those fixes and what I learned from it in my{" "}
+                <a
+                  href="#artifact"
+                  className="font-medium text-primary hover:underline"
+                >
+                  featured artifact
+                </a>
+                .
+              </p>
+              <p>
+                Before Wattpad, I contributed to team and independent software projects, including SmartAir, an
+                app that helps parents manage their child’s health data, and an
+                asynchronous Battleship gaming server. Beyond coding, I’ve been active in
+                extracurriculars and community initiatives across Toronto, and I’m a TA at
+                UofT, where I enjoy helping others with course material.
+              </p>
+              <p>
+                Looking ahead, I’m continuing to grow as an mobile engineer, building and maintaining apps
+                that are accessible and reliable for everyone.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in animation-delay-300">

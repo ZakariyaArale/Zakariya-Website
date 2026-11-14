@@ -15,7 +15,7 @@ const skills = [
   { name: "Git & GitHub", level: 85 },
   { name: "Bash/Shell Scripting", level: 80 },
   { name: "Asynchronous Programming", level: 80 },
-  { name: "App Development", level: 70 },
+  { name: "App Development", level: 85 },
   { name: "Machine Learning", level: 85 },
   { name: "Jira", level: 95 },
   { name: "Scrum", level: 95 },
@@ -27,7 +27,7 @@ const skills = [
 export const Skills = () => {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(
-  typeof window !== "undefined" && window.innerWidth < 768);
+    typeof window !== "undefined" && window.innerWidth < 768);
 
 
   useEffect(() => {
@@ -74,17 +74,17 @@ export const Skills = () => {
               </div>
 
               <div className="h-2 rounded-full bg-background overflow-hidden">
-              <div
-                className="h-full rounded-full transition-all duration-1000 ease-out"
-                style={{
-                  width: visible ? `${skill.level}%` : "0%",
-                  background: "linear-gradient(90deg, #9B30FF, #b04bff)",
-                  boxShadow: "0 0 12px rgba(155,48,255,0.45)",
-                }}
-              />
-            </div>
+                <div
+                  className="h-full rounded-full transition-all duration-1000 ease-out"
+                  style={{
+                    width: visible ? `${skill.level}%` : "0%",
+                    background: "linear-gradient(90deg, #9B30FF, #b04bff)",
+                    boxShadow: "0 0 12px rgba(155,48,255,0.45)",
+                  }}
+                />
+              </div>
 
-          </div>
+            </div>
           ))}
         </div>
       </div>
