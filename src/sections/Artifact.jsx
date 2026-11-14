@@ -8,25 +8,27 @@ const artifact = {
         {
             id: "before",
             label: "Before",
-            caption: 'Before: TalkBack reads the password screen\'s back button as "unlabeled."',
+            caption: 'Before: TalkBack reads the password screen\'s show/hide password button as "unlabeled."',
             src: `${import.meta.env.BASE_URL}video/Accessbility(Before).mp4`,
         },
         {
             id: "after",
             label: "After",
-            caption: 'After: the same button is announced as "Back."',
+            caption: 'After: the same button is announced as "show/hide button."',
             src: `${import.meta.env.BASE_URL}video/Accessbility(After).mp4`,
         },
     ],
     description: [
-        "As an Android engineering intern at Wattpad, I helped make the app work better with assistive technology. My manager audited the app and logged accessibility issues as Jira tickets, and I volunteered to take on about 10 of them, finishing them in roughly two weeks alongside other priority projects (stay tune). Across four screens (login, home, filter stories list, report user/story forms), some UI elements lacked content descriptions, so assistive technologies like TalkBack announced nothing useful. In the video, the create password screen's show password button is read as “unlabeled” before my fix and “show button” after. The fix was one line, pulling a string resource into the content description of the show password button.",
-        "The hard part of complete those tickets was the codebase. I had learned Jetpack Compose/Kotlin only 3 weeks earlier, and Wattpad's codebase was far larger than my previous android project SmartAir, which made it difficult to locate the UI elements that need content description. To locate UI elements quickly, I traced each user path to its screen (following the login screen's buttons to the file that implements the create password screen instead of blindly searching file names), used an AI tool to locate the element in that screen's file, and verified every fix on a physical tablet with TalkBack. A senior engineer approved the changes and they shipped in version 11.42.",
-        "This work showed me that a one-line change can decide whether someone can use an app at all. I also learned to use AI to navigate large codebases and grew more confident with Jetpack Compose. Finally, I learned to reproduce each bug with TalkBack before fixing it, since a few issues were already resolved and searching first cost me time. I want to carry these habits forward as an Android engineer, maintaining apps that are accessible for everyone.",
+        "As an Android engineering intern at Wattpad, I helped make the app work better with assistive technology. My manager audited the app and logged accessibility issues as Jira tickets, and I volunteered to take on about 10 of them, finishing in roughly two weeks alongside other priority projects. Across four screens (login, home, filter stories list, report user/story forms), some UI elements lacked content descriptions, so assistive technologies like TalkBack announced nothing useful. In the video, the create password screen's show/hide password button is read as “unlabeled” before my fix and “show/hide button” after. The fix was one line, pulling a string resource into the button's content description.",
+        "The hard part of completing those tickets was the codebase. I had learned Jetpack Compose/Kotlin only three weeks earlier, and Wattpad's codebase was far larger than my previous Android project, SmartAir. To locate UI elements quickly, I traced each user path to its screen (starting from the login screen's buttons instead of blindly searching file names), used an AI tool to find the element in that screen's file, and verified every fix on a physical tablet with TalkBack. A senior engineer approved the changes and they shipped in version 11.42.",
+        "This work showed me that a one-line change can decide whether someone can use an app at all. I learned to use AI to navigate large codebases and grew more confident with Jetpack Compose. I also learned to reproduce each bug with TalkBack before fixing it, since a few issues were already resolved and searching first cost me time. I want to carry these habits forward as an Android engineer, maintaining apps that are accessible for everyone.",
     ],
     skills: [
         "Kotlin",
         "Jetpack Compose",
+        "Android Accessibility (TalkBack)",
         "Android Studio",
+        "Jira",
     ],
 };
 
